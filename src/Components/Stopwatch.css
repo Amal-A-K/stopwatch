@@ -1,0 +1,80 @@
+.stopwatch{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
+    font-weight: bold;
+    background-color: white; 
+    padding: 20px 30px;
+    border-radius: 50px;
+    border: 10px solid rgb(2, 59, 34);
+}
+.display{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 2px rgb(37, 37, 37);
+}
+.controls button{
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 20px 30px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    min-width: 125px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.controls .start-btn{
+    color: white;
+    background-color: rgb(7, 150, 7);
+}
+.controls .start-btn:hover{
+    background-color: rgb(6, 109, 6);
+}
+.controls .stop-btn{
+    color: white;
+    background-color: rgb(189, 15, 15);
+}
+.controls .stop-btn:hover{
+    background-color: rgb(148, 14, 14);
+}
+.controls .reset-btn{
+    color: white;
+    background-color: grey;
+}
+.controls .reset-btn:hover{
+    background-color: rgb(83, 81, 81);
+}
+
+@media(max-width:426px){
+    .display{
+        font-size: 3rem;
+    }
+    .controls button{
+        font-size: 1.4rem;
+        padding: 10px 20px;
+        min-width: 90px;
+    }
+}
+@media(max-width:376px){
+    .display{
+        font-size: 2rem;
+    }
+    .controls button{
+        font-size: 1.2rem;
+        padding: 5px 10px;
+        min-width: 80px;
+    }
+}
+@media(max-width:321px){
+    .display{
+        font-size: 2rem;
+    }
+    .controls button{
+        font-size: 1rem;
+        padding: 5px 10px;
+        min-width: 60px;
+    }
+}

@@ -1,0 +1,7 @@
+body{
+  background-color: rgb(238, 228, 228);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
